@@ -59,10 +59,14 @@ function pageLoaded(args) {
 
     requestPermissions()
     	.then(function (granted){
-    		console.log('Location Permissions granted');
+
+    		// HERE IS THE IMPORTANT CODE
+            console.log('Location Permissions granted');
+
     		androidLocationManager = application.android.context.getSystemService(android.content.Context.LOCATION_SERVICE);    
 
 		    var criteria = createCriteria();
+
 		    var locationListener = createLocationListener();
 
 			console.log(androidLocationManager.getAllProviders());
@@ -72,8 +76,7 @@ function pageLoaded(args) {
 	    })
 	    .catch(function (error) {
 	    	console.log('Location Permissions not granted', error);
-    	});
-    
+    	});    
 
     page.bindingContext = createViewModel();
 }
