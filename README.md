@@ -4,16 +4,16 @@ I made this, because nativescript-geolocation plugin didn't work reliably for me
 
 [Android LocationManager Dev Page](https://developer.android.com/reference/android/location/LocationManager.html)
 
-All the native Android API functions can be used as shown in main-page.js
+All the native Android API functions can be used as shown in [main-page.js](app/main-page.js)
 
-**Sugestions or Questions are very welcome.**
+**Suggestions and/or Questions are very welcome.**
 
 ## Usage
 `tns plugin add nativescript-permissions`
 
 no need for nativescript-geolocation plugin anymore
 
-within main-page.js is the documented usage with comments from the Android LocationManager Developer Page
+within [main-page.js](app/main-page.js) is the documented usage with comments from the Android LocationManager Developer Page
 
 ## TO NOTICE !
 - I do not know, if nativescript-geolocation works with iOS.
